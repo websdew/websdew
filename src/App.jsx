@@ -11,6 +11,9 @@ import OnlineCoursesPage from '@/pages/OnlineCoursesPage';
 import CourseDetailPage from '@/pages/CourseDetailPage';
 import DigitalMarketingPage from '@/pages/DigitalMarketingPage';
 import ProductsPage from '@/pages/ProductsPage';
+import LoginPage from '@/pages/LoginPage';
+import RegisterPage from '@/pages/RegisterPage';
+import ProfilePage from '@/pages/ProfilePage';
 import ContactPage from '@/pages/ContactPage';
 import AboutPage from '@/pages/AboutPage';
 import SupportPage from '@/pages/SupportPage';
@@ -58,6 +61,9 @@ function App() {
             <Route path="/course/:courseId" element={<CourseDetailPage />} />
             <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
             <Route path="/products" element={<ProductsPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/crm-services" element={<CrmServicesPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/about-us" element={<AboutPage />} />

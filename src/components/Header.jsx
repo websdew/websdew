@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
@@ -12,6 +13,7 @@ import { cn } from '@/lib/utils';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const { user } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
@@ -98,11 +100,15 @@ const Header = () => {
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <LanguageSwitcher />
             <ThemeSwitcher />
-            <Button asChild variant="outline" className="hidden sm:inline-flex border-primary text-primary hover:bg-primary/10 hover:text-primary">
-              <a href="https://my.websdew.com" target="_blank" rel="noopener noreferrer">
-                {t('login')}
-              </a>
-            </Button>
+            {user ? (
+              <Button asChild variant="outline" className="hidden sm:inline-flex border-primary text-primary hover:bg-primary/10 hover:text-primary">
+                <Link to="/profile">{t('profile')}</Link>
+              </Button>
+            ) : (
+              <Button asChild variant="outline" className="hidden sm:inline-flex border-primary text-primary hover:bg-primary/10 hover:text-primary">
+                <Link to="/login">{t('login')}</Link>
+              </Button>
+            )}
             <Button variant="ghost" size="icon" className="lg:hidden" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -139,11 +145,15 @@ const Header = () => {
                   <span>{t(item.titleKey)}</span>
                 </NavLink>
               ))}
-              <Button asChild variant="outline" className="w-full mt-4 border-primary text-primary hover:bg-primary/10 hover:text-primary" onClick={toggleMobileMenu}>
-                <a href="https://my.websdew.com" target="_blank" rel="noopener noreferrer">
-                  {t('login')}
-                </a>
-              </Button>
+              {user ? (
+                <Button asChild variant="outline" className="w-full mt-4 border-primary text-primary hover:bg-primary/10 hover:text-primary" onClick={toggleMobileMenu}>
+                  <Link to="/profile">{t('profile')}</Link>
+                </Button>
+              ) : (
+                <Button asChild variant="outline" className="w-full mt-4 border-primary text-primary hover:bg-primary/10 hover:text-primary" onClick={toggleMobileMenu}>
+                  <Link to="/login">{t('login')}</Link>
+                </Button>
+              )}
             </nav>
           </motion.div>
         )}

@@ -81,5 +81,18 @@
   "onlineCoursesPageDesc": "Expand your knowledge and skills with our expert-led online courses. Find the perfect course to advance your career or learn something new.",
   "getStartedPageTitle": "Get Started with Websdew",
   "courseFormatLabel": "Format",
-  "whoShouldAttendLabel": "Who Should Attend"
+  "whoShouldAttendLabel": "Who Should Attend",
+  "register": "Register",
+  "profile": "Profile",
+  "logout": "Logout",
+  "phone": "Phone",
+  "verificationCode": "Verification Code",
+  "sendCode": "Send Code",
+  "verify": "Verify",
+  "role": "Role",
+  "userInfo": "User Information",
+  "payments": "Payments",
+  "classes": "Classes",
+  "subscriptions": "Subscriptions",
+  "noData": "No data available"
 }
