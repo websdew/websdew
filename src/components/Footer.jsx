@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import TelegramIcon from '@/components/icons/TelegramIcon';
+import WhatsappIcon from '@/components/icons/WhatsappIcon';
 import WebsdewLogo from '@/components/WebsdewLogo';
 
 const Footer = () => {
@@ -44,6 +46,8 @@ const Footer = () => {
     { icon: <Linkedin className="h-6 w-6" />, href: '#', label: 'LinkedIn' },
     { icon: <Instagram className="h-6 w-6" />, href: '#', label: 'Instagram' },
     { icon: <Youtube className="h-6 w-6" />, href: '#', label: 'Youtube' },
+    { icon: <TelegramIcon className="h-6 w-6" />, href: '#', label: 'Telegram' },
+    { icon: <WhatsappIcon className="h-6 w-6" />, href: '#', label: 'WhatsApp' },
   ];
 
   return (

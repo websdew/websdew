@@ -27,6 +27,12 @@ import deServicesGrid from '@/locales/de/servicesGrid.json';
 import deInteractivePricing from '@/locales/de/interactivePricing.json';
 import deCrmPricing from '@/locales/de/crmPricing.json';
 
+import frCommon from '@/locales/fr/common.json';
+import frSeoPricing from '@/locales/fr/seoPricing.json';
+import frServicesGrid from '@/locales/fr/servicesGrid.json';
+import frInteractivePricing from '@/locales/fr/interactivePricing.json';
+import frCrmPricing from '@/locales/fr/crmPricing.json';
+
 const mergeTranslations = (common, ...specifics) => {
   let merged = { ...common };
   specifics.forEach(specific => {
@@ -64,6 +70,13 @@ const resources = {
     deServicesGrid,
     deInteractivePricing,
     deCrmPricing
+  ),
+  fr: mergeTranslations(
+    frCommon,
+    frSeoPricing,
+    frServicesGrid,
+    frInteractivePricing,
+    frCrmPricing
   ),
 };
 

@@ -15,6 +15,7 @@ const languages = [
   { code: 'ar', name: 'العربية', tKey: 'arabic' },
   { code: 'it', name: 'Italiano', tKey: 'italian' },
   { code: 'de', name: 'Deutsch', tKey: 'german' },
+  { code: 'fr', name: 'Français', tKey: 'french' },
 ];
 
 const LanguageSwitcher = () => {
