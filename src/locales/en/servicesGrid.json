@@ -1,0 +1,14 @@
+{
+  "serviceOnlineTicketingTitle": "Online Ticketing System",
+  "serviceOnlineTicketingDesc": "Professional web-based support with ticket management, auto-responses, and email integration.",
+  "serviceWordPressThemesTitle": "Custom WordPress Themes & Plugins",
+  "serviceWordPressThemesDesc": "Secure, optimized, and scalable WordPress solutions with SEO and speed focus.",
+  "serviceWebAppsTitle": "Full-Stack Web Apps",
+  "serviceWebAppsDesc": "Custom React/Next.js & Node.js apps with user management and admin dashboards.",
+  "serviceWindowsAppsTitle": "Desktop Windows Apps",
+  "serviceWindowsAppsDesc": "C# or Electron apps with modern UI, DB support, and offline use for business.",
+  "serviceExcelAccessTitle": "Excel & Access Utilities",
+  "serviceExcelAccessDesc": "Advanced forms, reports, and automation with VBA macros for inventory and invoicing.",
+  "serviceSmartGadgetsTitle": "SMART Desktop Gadgets",
+  "serviceSmartGadgetsDesc": "Widgets like weather, calendar, AI attendance with SMS/social media alerts."
+}

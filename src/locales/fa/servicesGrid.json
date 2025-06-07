@@ -1,0 +1,14 @@
+{
+  "serviceOnlineTicketingTitle": "سیستم تیکتینگ آنلاین",
+  "serviceOnlineTicketingDesc": "پشتیبانی حرفه‌ای تحت وب با مدیریت تیکت، پاسخ خودکار و یکپارچگی ایمیل.",
+  "serviceWordPressThemesTitle": "قالب و افزونه سفارشی وردپرس",
+  "serviceWordPressThemesDesc": "راهکارهای وردپرس امن، بهینه و مقیاس‌پذیر با تمرکز بر سئو و سرعت.",
+  "serviceWebAppsTitle": "اپلیکیشن‌های وب فول استک",
+  "serviceWebAppsDesc": "اپلیکیشن‌های سفارشی React/Next.js و Node.js با مدیریت کاربر و داشبورد ادمین.",
+  "serviceWindowsAppsTitle": "اپلیکیشن‌های دسکتاپ ویندوز",
+  "serviceWindowsAppsDesc": "اپلیکیشن‌های C# یا Electron با UI مدرن، پشتیبانی پایگاه داده و استفاده آفلاین برای کسب‌وکار.",
+  "serviceExcelAccessTitle": "ابزارهای اکسل و اکسس",
+  "serviceExcelAccessDesc": "فرم‌ها، گزارشات و اتوماسیون پیشرفته با ماکروهای VBA برای انبارداری و صورتحساب.",
+  "serviceSmartGadgetsTitle": "گجت‌های هوشمند دسکتاپ",
+  "serviceSmartGadgetsDesc": "ویجت‌هایی مانند آب و هوا، تقویم، حضور و غیاب هوشمند با هشدارهای پیامکی/شبکه‌های اجتماعی."
+}

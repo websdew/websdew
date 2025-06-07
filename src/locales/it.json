@@ -1,0 +1,10 @@
+{
+  "translation": {
+    "common": "src/locales/it/common.json",
+    "seoPricing": "src/locales/it/seoPricing.json",
+    "servicesGrid": "src/locales/it/servicesGrid.json",
+    "interactivePricing": "src/locales/it/interactivePricing.json",
+    "crmPricing": "src/locales/it/crmPricing.json",
+    "onlineCoursesData": "src/locales/it/onlineCourses.json"
+  }
+}
