@@ -44,3 +44,19 @@ npm run build
 
 The output will be placed in the `dist/` directory.
 
+## Project allocation system
+
+The backend now supports a simple project pool for managing partners and clients.
+
+- **POST `/api/projects`** – create a new project and automatically assign it to
+  the best partner based on rating and active projects.
+- **POST `/api/projects/:id/reject`** – allow a partner to reject an assigned
+  project, after which it is offered to the next partner in line.
+- **POST `/api/contracts/:id/sign`** – digitally sign the contract associated
+  with a project.
+- **POST `/api/ratings`** – submit quality, speed and satisfaction ratings for a
+  partner once a project is completed. Ratings influence future allocations.
+
+Notification emails (and console based SMS messages) are sent to both client and
+partner on assignment.
+
