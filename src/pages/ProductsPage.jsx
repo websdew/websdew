@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Package } from 'lucide-react';
-import ServicesGrid from '@/components/ServicesGrid'; // Re-using for product display
+import ServicesGrid from '@/components/ServicesGrid';
+import DigitalStore from '@/components/DigitalStore';
 
 const ProductsPage = () => {
   const { t } = useTranslation();
@@ -31,10 +32,7 @@ const ProductsPage = () => {
       
       <ServicesGrid />
 
-      <section className="mt-16 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-foreground">{t('comingSoon')}</h2>
-        <p className="text-lg text-muted-foreground">{t('comingSoonDetail')}</p>
-      </section>
+      <DigitalStore />
 
     </motion.div>
   );
