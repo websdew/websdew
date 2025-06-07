@@ -44,3 +44,11 @@ npm run build
 
 The output will be placed in the `dist/` directory.
 
+## Interface preferences
+
+The site supports six languages (English, Persian, Arabic, German, Italian and French)
+via `i18next`. The selected language is stored in `localStorage` and applied on
+every visit. A theme switcher toggles Tailwind's `dark` class. The choice is also
+persisted in `localStorage` and respects the system preference when no value has
+been saved.
+
